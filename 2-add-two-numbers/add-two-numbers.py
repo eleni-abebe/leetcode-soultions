@@ -37,12 +37,12 @@ class Solution(object):
             c.append(int(st[i]))
         temp3 = ListNode(c[0])
         ll = temp3
-        temp4 = temp3
+        
 
         for i in range(1, len(c)):
             new_node = ListNode(c[i])
             ll.next = new_node
             ll = ll.next
 
-        return temp4
+        return temp3
         
