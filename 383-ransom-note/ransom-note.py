@@ -6,15 +6,11 @@ class Solution(object):
         :type magazine: str
         :rtype: bool
         """
-        mag_counter=Counter(magazine)
-        for i in ransomNote:
-            if mag_counter[i] >0:
-                mag_counter[i]-=1
+        hashmap = Counter(magazine) 
+
+        for ch in ransomNote:
+            if hashmap[ch] > 0:
+                hashmap[ch]-=1
             else:
                 return False
         return True
-
-        
-
-
-        
