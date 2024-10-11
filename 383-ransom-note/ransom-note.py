@@ -1,5 +1,5 @@
 class Solution(object):
-    from collections import Counter
+    
     def canConstruct(self, ransomNote, magazine):
         """
         :type ransomNote: str
